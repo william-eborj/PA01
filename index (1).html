@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web | HTML, CSS y JavaScript</title>
+    <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+    <div id="contenedor">
+        <header id="cabecera">
+            <!-- Se usa la imagen original cuando está disponible. -->
+            <object id="logo" data="imagenes/logo.png" type="image/png" aria-label="ISIL">
+                <span class="logo-respaldo">ISIL</span>
+            </object>
+            <h2><span>Desarrollo Web</span></h2>
+        </header>
+
+        <p class="autor"><span>Desarrollado por William rojas</span></p>
+
+        <main>
+            <h1>HTML, CSS y JavaScript:</h1>
+            <div class="introduccion">
+                <p>Son los tres pilares fundamentales del desarrollo web que trabajan juntos para crear páginas web dinámicas e interactivas.</p>
+                <p><strong>HTML</strong> se encarga de la estructura y el contenido, <strong>CSS</strong> del diseño y la presentación, y <strong>JavaScript</strong> de la interactividad y la funcionalidad.</p>
+            </div>
+
+            <section aria-labelledby="titulo-definiciones">
+                <h2 id="titulo-definiciones" class="titulo-seccion">Definiciones:</h2>
+
+                <!-- Las tres tarjetas son hermanas dentro del mismo contenedor. -->
+                <div id="tarjetas" class="rejilla">
+                    <article id="empiezalobuenohtml" class="tarjeta tema-html">
+                        <h3>HTML (HyperText<br>Markup Language):</h3>
+                        <p>Es el lenguaje de marcado que define la <mark>estructura y el contenido</mark> de una página web. Utiliza etiquetas para delimitar diferentes elementos, como párrafos, encabezados, imágenes, enlaces, etc.</p>
+                        <object class="imagen-lenguaje" data="imagenes/html.jpg" type="image/jpeg" aria-label="Logo de HTML5">
+                            <svg viewBox="0 0 200 170" role="img" aria-label="HTML5">
+                                <rect width="200" height="170" fill="#fff"/>
+                                <text x="100" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="25" fill="#222">HTML</text>
+                                <path fill="#df4b25" d="M48 40h104l-10 112-42 12-42-12z"/>
+                                <path fill="#f2672c" d="M100 49h43l-9 96-34 10z"/>
+                                <path fill="#fff" d="M68 62h65l-2 14H84l2 15h44l-5 44-25 7-26-7-2-23h15l1 12 12 3 12-3 2-19H71z"/>
+                            </svg>
+                        </object>
+                    </article>
+
+                    <article id="empiezalobuenocss" class="tarjeta tema-css">
+                        <h3>CSS (Cascading Style<br>Sheets):</h3>
+                        <p>Es un lenguaje de estilos que se utiliza para controlar la <mark>presentación</mark> de una página web. Permite definir aspectos como los colores, fuentes, tamaños, márgenes, etc., de los elementos HTML.</p>
+                        <object class="imagen-lenguaje" data="imagenes/css.jpg" type="image/jpeg" aria-label="Logo de CSS3">
+                            <svg viewBox="0 0 200 170" role="img" aria-label="CSS3">
+                                <rect width="200" height="170" fill="#fff"/>
+                                <text x="100" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="25" fill="#222">CSS</text>
+                                <path fill="#087db5" d="M48 40h104l-10 112-42 12-42-12z"/>
+                                <path fill="#25a9df" d="M100 49h43l-9 96-34 10z"/>
+                                <path fill="#fff" d="M69 62h64l-7 73-26 7-26-7-2-23h15l1 12 12 3 12-3 2-19H86l-1-14h30l1-15H70z"/>
+                            </svg>
+                        </object>
+                    </article>
+
+                    <article id="empiezalobuenojava" class="tarjeta tema-js">
+                        <h3>JavaScript (Programming<br>Language):</h3>
+                        <p>Es un lenguaje de programación que permite agregar <mark>funcionalidad interactiva</mark> a una página web. Permite manipular elementos HTML, responder a eventos del usuario, realizar cálculos, etc.</p>
+                        <object class="imagen-lenguaje" data="imagenes/js.jpg" type="image/jpeg" aria-label="Ilustración de JavaScript">
+                            <svg viewBox="0 0 200 170" role="img" aria-label="JavaScript">
+                                <rect width="200" height="170" fill="#fff"/>
+                                <text x="100" y="29" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="25" fill="#222">JS</text>
+                                <path fill="#659f18" d="M48 40h104l-10 112-42 12-42-12z"/>
+                                <path fill="#87be30" d="M100 49h43l-9 96-34 10z"/>
+                                <path fill="#fff" d="M72 62h59l-6 73-25 7-26-7-2-23h15l1 12 12 3 12-3 4-48H72z"/>
+                            </svg>
+                        </object>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="titulo-analogia">
+                <h2 id="titulo-analogia" class="titulo-seccion">Analogía de la web y una casa:</h2>
+
+                <div id="analogia" class="rejilla">
+                    <article class="tarjeta htmlicono tema-html">
+                        <h3><span class="icono-web" aria-hidden="true">5</span> HTML</h3>
+                        <p><em>Estructura de la casa.</em></p>
+                        <p>Es como los cimientos, las paredes, techos y distribución de las habitaciones.</p>
+                        <p>HTML define la estructura básica de una página web: qué elementos hay (títulos, párrafos, botones, imágenes, etc.), pero sin preocuparse por cómo se ven.</p>
+                    </article>
+
+                    <article class="tarjeta csslogo tema-css">
+                        <h3><span class="icono-web" aria-hidden="true">3</span> CSS</h3>
+                        <p><em>Decoración y estilo de la casa.</em></p>
+                        <p>Es la pintura de las paredes, el tipo de piso, los muebles, las cortinas, el diseño de la cocina.</p>
+                        <p>CSS se encarga de cómo se ve la página: colores, fuentes, márgenes, alineaciones, estilos responsivos… lo visual.</p>
+                    </article>
+
+                    <article class="tarjeta javascriptlogo tema-js">
+                        <h3><span class="icono-web icono-js" aria-hidden="true">JS</span> JavaScript</h3>
+                        <p><em>Los sistemas eléctricos y electrónicos de la casa.</em></p>
+                        <p>Es como los interruptores que encienden luces, las puertas automáticas, el termostato inteligente.</p>
+                        <p>JavaScript añade funcionalidad e interactividad haciendo que pasen cosas como respuesta a un evento.</p>
+                    </article>
+                </div>
+
+                <!-- Esta ilustración queda fuera de la cuadrícula de tarjetas. -->
+                <figure class="imagencasa">
+                    <object data="imagenes/casa2.png" type="image/png" aria-label="HTML es la estructura, CSS es la decoración y JavaScript la interactividad de una casa">
+                        <svg viewBox="0 0 460 290" role="img" aria-label="Analogía entre una página web y una casa">
+                            <defs>
+                                <g id="casa" stroke="#563e32" stroke-width="4" stroke-linejoin="round">
+                                    <path d="M18 68 70 23l52 45" fill="none"/>
+                                    <path d="M29 60v71h82V60L70 34z"/>
+                                    <path d="M61 94h20v37M43 72h17v17H43zM81 72h17v17H81z" fill="#fff"/>
+                                </g>
+                            </defs>
+                            <rect width="460" height="290" fill="#fffafa"/>
+                            <g text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" fill="#333">
+                                <text x="78" y="46" font-size="26" fill="#a63832">HTML</text>
+                                <text x="230" y="46" font-size="26">CSS</text>
+                                <text x="382" y="46" font-size="26">JavaScript</text>
+                            </g>
+                            <use href="#casa" x="8" y="49" fill="#fff"/>
+                            <use href="#casa" x="160" y="49" fill="#e4b46b"/>
+                            <use href="#casa" x="312" y="49" fill="#e4b46b"/>
+                            <path d="m179 116 51-44 51 44M331 116l51-44 51 44" fill="none" stroke="#98603c" stroke-width="9"/>
+                            <g fill="#5c9c48" stroke="#426e36" stroke-width="2">
+                                <circle cx="181" cy="168" r="12"/><circle cx="278" cy="168" r="12"/>
+                                <circle cx="333" cy="168" r="12"/>
+                            </g>
+                            <circle cx="431" cy="166" r="19" fill="#e5eee3" stroke="#563e32" stroke-width="3"/>
+                            <path d="m433 151-10 17h10l-4 14 12-20h-11z" fill="#487048"/>
+                            <g text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#333">
+                                <text x="78" y="211"><tspan x="78">Estructura</tspan><tspan x="78" dy="23">de la casa</tspan></text>
+                                <text x="230" y="211"><tspan x="230">Decoración</tspan><tspan x="230" dy="23">y estilo de</tspan><tspan x="230" dy="23">la casa</tspan></text>
+                                <text x="382" y="211"><tspan x="382">Sistemas e</tspan><tspan x="382" dy="23">interactividad</tspan></text>
+                            </g>
+                        </svg>
+                    </object>
+                </figure>
+            </section>
+
+            <footer id="resumenfinal">
+                <h2 class="titulo-seccion">Resumen</h2>
+                <blockquote>“Los tres lenguajes son esenciales para el desarrollo web, y cada uno juega un papel crucial en la creación de páginas web modernas y funcionales.”</blockquote>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

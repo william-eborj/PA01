@@ -1,0 +1,271 @@
+/* Toda la presentación de la página se configura en este archivo. */
+:root {
+    --color-html: #dd421b;
+    --color-css: #087db4;
+    --color-js: #689e13;
+    --color-texto: #383e40;
+    --borde-grupo: #414b50;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: #d1e7f0;
+
+    /* fondo.jpg tiene prioridad; los degradados sirven de respaldo. */
+    background-image:
+        url("imagenes/fondo.jpg"),
+        repeating-linear-gradient(0deg, transparent 0 28px, #ffffff25 28px 54px, transparent 54px 82px),
+        repeating-linear-gradient(90deg, #ffffff28 0 30px, #80adbf18 62px 92px),
+        linear-gradient(120deg, #c1dce8, #e2eff3 48%, #bcd9e6);
+    background-size: cover, 82px 82px, 92px 92px, cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contenedor {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    padding: 0 30px 42px;
+    border-top: 12px solid #84919a;
+}
+
+#cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 12px 0 18px;
+    border-bottom: 3px solid #52616a;
+}
+
+#logo {
+    display: block;
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.logo-respaldo {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    background: #00b2e4;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#cabecera h2 {
+    margin: 0;
+    color: #00a8d6;
+    font-size: 42px;
+    line-height: 1.15;
+    text-align: right;
+    text-shadow: 2px 3px 3px #77939e;
+}
+
+#cabecera h2 span {
+    background: #ffffffe8;
+    box-shadow: 0 0 14px 5px #ffffffb3;
+}
+
+.autor {
+    margin: 18px 0 25px;
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.autor span {
+    padding: 3px 5px;
+    background: #fff;
+}
+
+h1,
+.titulo-seccion {
+    margin: 0 0 25px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.introduccion p {
+    margin: 0;
+}
+
+.titulo-seccion {
+    margin-top: 28px;
+}
+
+/* Tres columnas iguales. Cada article es hijo directo de la cuadrícula. */
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 14px;
+    padding: 15px;
+    border: 4px solid var(--borde-grupo);
+}
+
+.tema-html { --color-tarjeta: var(--color-html); }
+.tema-css  { --color-tarjeta: var(--color-css); }
+.tema-js   { --color-tarjeta: var(--color-js); }
+
+.tarjeta {
+    min-width: 0;
+    padding: 10px;
+    border: 2px solid #879aa2;
+    background: #f5f6f3cc;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.tarjeta h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 0 20px;
+    padding: 9px 5px;
+    background: var(--color-tarjeta);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.tarjeta p {
+    margin: 0 0 20px;
+}
+
+.tarjeta p:last-child {
+    margin-bottom: 0;
+}
+
+mark {
+    background: #ffff00;
+    color: #202020;
+}
+
+#tarjetas .tarjeta {
+    display: flex;
+    flex-direction: column;
+}
+
+#tarjetas h3 {
+    min-height: 66px;
+}
+
+.imagen-lenguaje {
+    display: block;
+    width: 100%;
+    height: 175px;
+    margin-top: auto;
+    background: #fff;
+    object-fit: contain;
+}
+
+.imagen-lenguaje svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Iconos locales: no es necesario descargar Font Awesome. */
+.icono-web {
+    display: inline-grid;
+    width: 18px;
+    height: 21px;
+    place-items: center;
+    background: #fff;
+    color: var(--color-tarjeta);
+    clip-path: polygon(0 0, 100% 0, 90% 85%, 50% 100%, 10% 85%);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.icono-js {
+    width: 20px;
+    height: 20px;
+    clip-path: none;
+    font-size: 11px;
+}
+
+#analogia .tarjeta {
+    min-height: 435px;
+}
+
+#analogia h3 {
+    margin-bottom: 22px;
+}
+
+.imagencasa {
+    width: 51%;
+    margin: 18px auto 28px;
+    padding: 6px;
+    background: #fffafa;
+    box-shadow: 15px 9px 12px #0005;
+}
+
+.imagencasa object,
+.imagencasa svg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 460 / 290;
+    object-fit: contain;
+}
+
+#resumenfinal {
+    border-top: 3px solid #52616a;
+}
+
+#resumenfinal .titulo-seccion {
+    margin-top: 28px;
+}
+
+#resumenfinal blockquote {
+    margin: 0;
+    padding: 20px 18px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 4px 6px 10px #0005;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* En pantallas pequeñas se prioriza que el texto siga siendo legible. */
+@media (max-width: 650px) {
+    body { font-size: 16px; }
+    #contenedor { padding: 0 16px 28px; border-top-width: 7px; }
+    #cabecera { gap: 15px; }
+    #logo { flex-basis: 85px; width: 85px; height: 85px; }
+    .logo-respaldo { font-size: 25px; }
+    #cabecera h2 { font-size: clamp(22px, 5.5vw, 34px); }
+    .autor { font-size: 12px; }
+    h1, .titulo-seccion { font-size: 20px; }
+    .rejilla { grid-template-columns: 1fr; padding: 12px; }
+    .tarjeta { padding: 12px; font-size: 16px; }
+    #tarjetas h3 { min-height: 0; }
+    .imagen-lenguaje { height: 175px; }
+    #analogia .tarjeta { min-height: 0; }
+    .imagencasa { width: min(100%, 430px); margin-top: 24px; }
+    #resumenfinal blockquote { font-size: 16px; }
+}
